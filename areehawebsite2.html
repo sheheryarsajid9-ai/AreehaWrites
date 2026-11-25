@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Areeha Tufail — Academic Research, Dissertations & Study Support</title>
+  <meta
+    name="description"
+    content="Academic research structuring, dissertation guidance, and study support by Areeha Tufail for UK, US, and international students across all university departments. 5+ years of experience."
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,500&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "system-ui", "-apple-system", "sans-serif"],
+            serif: ["Newsreader", "Georgia", "serif"]
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f8fafc;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #1e3a8a;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-900 selection:text-white">
+  <!-- Live Toast Feedback -->
+  <div
+    id="toast-banner"
+    class="fixed bottom-24 right-4 sm:right-6 z-50 hidden max-w-sm rounded-2xl bg-slate-900 text-white px-4 py-3 text-xs sm:text-sm font-medium shadow-xl border border-slate-700 flex items-center gap-2.5"
+    role="status"
+    aria-live="polite"
+  >
+    <i class="fa-solid fa-circle-check text-emerald-400 shrink-0"></i>
+    <span id="toast-message">Action completed.</span>
+  </div>
+
+  <!-- Top Navigation -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-4">
+      <a href="#top" class="flex items-center gap-3 min-w-0 group">
+        <div
+          class="w-10 h-10 rounded-xl bg-blue-950 text-white font-serif font-bold text-lg flex items-center justify-center shadow-xs group-hover:bg-blue-900 transition shrink-0"
+        >
+          AT
+        </div>
+        <div class="min-w-0">
+          <div class="font-bold text-slate-950 text-sm sm:text-base tracking-tight truncate">
+            Areeha Tufail
+          </div>
+          <div class="text-[11px] font-medium text-slate-500 truncate">
+            Academic Research &amp; Study Advisory
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600" aria-label="Primary Navigation">
+        <a href="#services" class="hover:text-blue-950 transition">Services</a>
+        <a href="#departments" class="hover:text-blue-950 transition">Departments</a>
+        <a href="#samples" class="hover:text-blue-950 transition">Sample Work</a>
+        <a href="#process" class="hover:text-blue-950 transition">How It Works</a>
+        <a href="#faq" class="hover:text-blue-950 transition">FAQ</a>
+      </nav>
+
+      <!-- Header CTA & Mobile Menu Toggle -->
+      <div class="flex items-center gap-2.5">
+        <a
+          href="https://wa.me/923328572509?text=Hello%20Areeha%2C%20I%20would%20like%20academic%20research%20and%20study%20guidance."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-semibold shadow-xs transition"
+        >
+          <i class="fa-brands fa-whatsapp text-base"></i>
+          <span>WhatsApp Inquiry</span>
+        </a>
+
+        <button
+          type="button"
+          id="mobile-menu-btn"
+          class="md:hidden p-2.5 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-100 transition"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-bars text-base"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-200 px-4 py-4 space-y-2.5 text-sm font-medium text-slate-700">
+      <a href="#services" class="mobile-nav-link block py-2 px-3 rounded-xl hover:bg-slate-100">Services</a>
+      <a href="#departments" class="mobile-nav-link block py-2 px-3 rounded-xl hover:bg-slate-100">Departments</a>
+      <a href="#samples" class="mobile-nav-link block py-2 px-3 rounded-xl hover:bg-slate-100">Sample Work</a>
+      <a href="#process" class="mobile-nav-link block py-2 px-3 rounded-xl hover:bg-slate-100">How It Works</a>
+      <a href="#faq" class="mobile-nav-link block py-2 px-3 rounded-xl hover:bg-slate-100">FAQ</a>
+      <a
+        href="https://wa.me/923328572509?text=Hello%20Areeha%2C%20I%20would%20like%20to%20discuss%20my%20academic%20project."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="mt-2 w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold"
+      >
+        <i class="fa-brands fa-whatsapp text-base"></i>
+        <span>Message +923328572509</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-gradient-to-b from-white via-blue-50/40 to-slate-50 border-b border-slate-200/70">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          <!-- Left Column -->
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex flex-wrap items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/5 border border-blue-900/15 text-blue-950 text-xs font-semibold">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              <span>5+ Years Academic Experience • Human-Crafted, AI-Free &amp; Zero Plagiarism</span>
+            </div>
+
+            <h1 class="font-serif text-3xl sm:text-5xl lg:text-[3.35rem] font-semibold text-slate-950 leading-[1.12] tracking-tight">
+              Structured Academic Research &amp; Study Support for Global Students
+            </h1>
+
+            <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
+              I’m <strong class="text-slate-900 font-semibold">Areeha Tufail</strong>. I help undergraduate and postgraduate students in the UK, US, and worldwide organize research outlines, refine dissertation methodology, and build clear, human-written, zero-plagiarism study drafts across every university department.
+            </p>
+
+            <div class="flex flex-col sm:flex-row sm:items-center gap-3.5 pt-1">
+              <button
+                type="button"
+                id="hero-whatsapp-cta"
+                class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold shadow-md shadow-emerald-900/10 transition cursor-pointer"
+              >
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Chat on WhatsApp (+923328572509)</span>
+              </button>
+
+              <a
+                href="#inquiry-builder"
+                class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white hover:bg-slate-100 text-slate-900 border border-slate-300 text-sm font-semibold transition"
+              >
+                <span>Build Brief &amp; Send</span>
+                <i class="fa-solid fa-arrow-right text-xs text-slate-500"></i>
+              </a>
+            </div>
+
+            <!-- Trust & Academic Craft Strip -->
+            <div class="pt-4 border-t border-slate-200/80 grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs text-slate-600">
+              <div class="flex items-start gap-2.5">
+                <i class="fa-solid fa-user-pen text-blue-900 text-sm mt-0.5 shrink-0"></i>
+                <div>
+                  <div class="font-semibold text-slate-900">100% AI-Free Drafting</div>
+                  <span>Human-authored structure, analysis &amp; tone</span>
+                </div>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <i class="fa-solid fa-shield-check text-blue-900 text-sm mt-0.5 shrink-0"></i>
+                <div>
+                  <div class="font-semibold text-slate-900">Zero Plagiarism Focus</div>
+                  <span>Original synthesis &amp; verified citations</span>
+                </div>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <i class="fa-solid fa-award text-blue-900 text-sm mt-0.5 shrink-0"></i>
+                <div>
+                  <div class="font-semibold text-slate-900">All Departments &amp; Rubrics</div>
+                  <span>APA 7, Harvard, MLA, Chicago &amp; OSCOLA</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Academic Standards & Style Marks -->
+            <div class="pt-2 flex flex-wrap items-center gap-2 text-[11px] font-semibold text-slate-600">
+              <span class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 inline-flex items-center gap-1.5">
+                <i class="fa-solid fa-certificate text-blue-900"></i>
+                <span>UK &amp; US Standards</span>
+              </span>
+              <span class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 inline-flex items-center gap-1.5">
+                <i class="fa-solid fa-quote-right text-blue-900"></i>
+                <span>APA • Harvard • MLA • OSCOLA</span>
+              </span>
+              <span class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 inline-flex items-center gap-1.5">
+                <i class="fa-solid fa-check-double text-emerald-700"></i>
+                <span>Originality &amp; Critical Analysis</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Right Column: Quick Brief & WhatsApp Dispatch Card -->
+          <div class="lg:col-span-5" id="inquiry-builder">
+            <div class="bg-white rounded-3xl border border-slate-200 shadow-xl shadow-slate-900/5 p-6 sm:p-7 space-y-5">
+              <div class="flex items-center justify-between gap-2 pb-4 border-b border-slate-100">
+                <div>
+                  <h2 class="text-base sm:text-lg font-bold text-slate-950">Start a Study Brief</h2>
+                  <p class="text-xs text-slate-500 mt-0.5">Opens directly in WhatsApp with your details ready</p>
+                </div>
+                <span class="px-2.5 py-1 rounded-lg bg-blue-50 text-blue-900 text-[11px] font-semibold border border-blue-100">
+                  UK &amp; US Ready
+                </span>
+              </div>
+
+              <form id="quick-brief-form" class="space-y-3.5" novalidate>
+                <div>
+                  <label for="brief-name" class="block text-xs font-semibold text-slate-700 mb-1">
+                    Your Name
+                  </label>
+                  <input
+                    type="text"
+                    id="brief-name"
+                    placeholder="e.g., Hannah Walker"
+                    class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50/60 focus:bg-white focus:border-blue-800 focus:outline-none text-sm"
+                  />
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div>
+                    <label for="brief-region" class="block text-xs font-semibold text-slate-700 mb-1">
+                      Region / System
+                    </label>
+                    <select
+                      id="brief-region"
+                      class="w-full px-3 py-2.5 rounded-xl border border-slate-200 bg-slate-50/60 focus:bg-white focus:border-blue-800 focus:outline-none text-sm"
+                    >
+                      <option value="UK University">UK University</option>
+                      <option value="US University">US University</option>
+                      <option value="International / Other">International / Other</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label for="brief-department" class="block text-xs font-semibold text-slate-700 mb-1">
+                      Department
+                    </label>
+                    <select
+                      id="brief-department"
+                      class="w-full px-3 py-2.5 rounded-xl border border-slate-200 bg-slate-50/60 focus:bg-white focus:border-blue-800 focus:outline-none text-sm"
+                    >
+                      <option value="Business & Finance">Business &amp; Finance</option>
+                      <option value="Computer Science & Data">Computer Science &amp; Data</option>
+                      <option value="Nursing & Health Sciences">Nursing &amp; Health Sciences</option>
+                      <option value="Psychology & Social Sciences">Psychology &amp; Social Sciences</option>
+                      <option value="Law & Public Policy">Law &amp; Public Policy</option>
+                      <option value="Engineering & Applied Sciences">Engineering &amp; Applied Sciences</option>
+                      <option value="Literature, History & Humanities">Literature, History &amp; Humanities</option>
+                      <option value="Education & Economics">Education &amp; Economics</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div>
+                    <label for="brief-type" class="block text-xs font-semibold text-slate-700 mb-1">
+                      Support Type
+                    </label>
+                    <select
+                      id="brief-type"
+                      class="w-full px-3 py-2.5 rounded-xl border border-slate-200 bg-slate-50/60 focus:bg-white focus:border-blue-800 focus:outline-none text-sm"
+                    >
+                      <option value="Dissertation & Research">Dissertation &amp; Research</option>
+                      <option value="Coursework & Assignments">Coursework &amp; Assignments</option>
+                      <option value="Literature Review & Citations">Literature Review &amp; Citations</option>
+                      <option value="Editing & Proofreading">Editing &amp; Proofreading</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label for="brief-deadline" class="block text-xs font-semibold text-slate-700 mb-1">
+                      Target Deadline
+                    </label>
+                    <input
+                      type="text"
+                      id="brief-deadline"
+                      placeholder="e.g., 5 days"
+                      class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50/60 focus:bg-white focus:border-blue-800 focus:outline-none text-sm"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label for="brief-notes" class="block text-xs font-semibold text-slate-700 mb-1">
+                    Topic / Rubric Summary
+                  </label>
+                  <textarea
+                    id="brief-notes"
+                    rows="2"
+                    placeholder="Share word count, citation style (APA/Harvard), or key questions..."
+                    class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50/60 focus:bg-white focus:border-blue-800 focus:outline-none text-sm"
+                  ></textarea>
+                </div>
+
+                <div class="pt-1 flex flex-col sm:flex-row gap-2.5">
+                  <button
+                    type="submit"
+                    class="flex-1 py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-semibold shadow-sm transition inline-flex items-center justify-center gap-2 cursor-pointer"
+                  >
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>Send to WhatsApp</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    id="copy-brief-btn"
+                    class="py-3 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs sm:text-sm font-semibold transition inline-flex items-center justify-center gap-1.5 cursor-pointer"
+                    title="Copy formatted brief"
+                  >
+                    <i class="fa-regular fa-copy"></i>
+                    <span>Copy</span>
+                  </button>
+                </div>
+              </form>
+
+              <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                <span>Direct WhatsApp: <strong class="text-slate-800 font-mono">+923328572509</strong></span>
+                <button
+                  type="button"
+                  id="copy-number-btn"
+                  class="text-blue-900 hover:text-blue-700 font-semibold underline cursor-pointer"
+                >
+                  Copy Number
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Academic Services Section -->
+    <section id="services" class="py-14 sm:py-20 bg-white border-b border-slate-200/70">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+        <div class="max-w-2xl space-y-2.5">
+          <div class="text-xs font-bold uppercase tracking-wider text-blue-900">Core Services</div>
+          <h2 class="font-serif text-2xl sm:text-4xl font-semibold text-slate-950">
+            Clear, Methodical Support Across Every Stage of Your Module
+          </h2>
+          <p class="text-sm sm:text-base text-slate-600">
+            Tailored for UK coursework and dissertations as well as US college papers, research proposals, and capstone projects.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <!-- Service 1 -->
+          <article class="rounded-2xl border border-slate-200 bg-slate-50/50 hover:bg-white hover:shadow-md transition p-6 flex flex-col justify-between gap-5">
+            <div class="space-y-3">
+              <div class="w-11 h-11 rounded-xl bg-blue-950 text-white flex items-center justify-center text-base">
+                <i class="fa-solid fa-scroll"></i>
+              </div>
+              <h3 class="text-base font-bold text-slate-950">Dissertations &amp; Proposals</h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Research questions, literature synthesis, qualitative or quantitative methodology outlines, and chapter structuring.
+              </p>
+            </div>
+            <button
+              type="button"
+              data-service-inquiry="Dissertation & Research"
+              class="service-cta-btn text-left text-xs font-semibold text-blue-900 hover:text-emerald-700 inline-flex items-center gap-1.5 cursor-pointer"
+            >
+              <span>Request dissertation help</span>
+              <i class="fa-solid fa-arrow-right text-[11px]"></i>
+            </button>
+          </article>
+
+          <!-- Service 2 -->
+          <article class="rounded-2xl border border-slate-200 bg-slate-50/50 hover:bg-white hover:shadow-md transition p-6 flex flex-col justify-between gap-5">
+            <div class="space-y-3">
+              <div class="w-11 h-11 rounded-xl bg-blue-950 text-white flex items-center justify-center text-base">
+                <i class="fa-solid fa-file-lines"></i>
+              </div>
+              <h3 class="text-base font-bold text-slate-950">Assignments &amp; Essays</h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Analytical essays, case study breakdowns, reflective reports, and structured drafts aligned to grading rubrics.
+              </p>
+            </div>
+            <button
+              type="button"
+              data-service-inquiry="Coursework & Assignments"
+              class="service-cta-btn text-left text-xs font-semibold text-blue-900 hover:text-emerald-700 inline-flex items-center gap-1.5 cursor-pointer"
+            >
+              <span>Request assignment help</span>
+              <i class="fa-solid fa-arrow-right text-[11px]"></i>
+            </button>
+          </article>
+
+          <!-- Service 3 -->
+          <article class="rounded-2xl border border-slate-200 bg-slate-50/50 hover:bg-white hover:shadow-md transition p-6 flex flex-col justify-between gap-5">
+            <div class="space-y-3">
+              <div class="w-11 h-11 rounded-xl bg-blue-950 text-white flex items-center justify-center text-base">
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+              </div>
+              <h3 class="text-base font-bold text-slate-950">Academic Research &amp; Citations</h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Peer-reviewed source organization, annotated bibliographies, and accurate formatting in APA, Harvard, MLA, or Chicago.
+              </p>
+            </div>
+            <button
+              type="button"
+              data-service-inquiry="Literature Review & Citations"
+              class="service-cta-btn text-left text-xs font-semibold text-blue-900 hover:text-emerald-700 inline-flex items-center gap-1.5 cursor-pointer"
+            >
+              <span>Request research help</span>
+              <i class="fa-solid fa-arrow-right text-[11px]"></i>
+            </button>
+          </article>
+
+          <!-- Service 4 -->
+          <article class="rounded-2xl border border-slate-200 bg-slate-50/50 hover:bg-white hover:shadow-md transition p-6 flex flex-col justify-between gap-5">
+            <div class="space-y-3">
+              <div class="w-11 h-11 rounded-xl bg-blue-950 text-white flex items-center justify-center text-base">
+                <i class="fa-solid fa-pen-nib"></i>
+              </div>
+              <h3 class="text-base font-bold text-slate-950">Editing &amp; Clarity Polish</h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Academic tone refinement, logical flow improvement, grammar polishing, and rubric alignment checks before submission.
+              </p>
+            </div>
+            <button
+              type="button"
+              data-service-inquiry="Editing & Proofreading"
+              class="service-cta-btn text-left text-xs font-semibold text-blue-900 hover:text-emerald-700 inline-flex items-center gap-1.5 cursor-pointer"
+            >
+              <span>Request editing help</span>
+              <i class="fa-solid fa-arrow-right text-[11px]"></i>
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dedicated All-Departments Directory -->
+    <section id="departments" class="py-14 sm:py-20 bg-slate-50 border-b border-slate-200/70">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+          <div class="max-w-2xl space-y-2">
+            <div class="text-xs font-bold uppercase tracking-wider text-blue-900">Dedicated Academic Departments</div>
+            <h2 class="font-serif text-2xl sm:text-4xl font-semibold text-slate-950">
+              Coverage Across Every University Field
+            </h2>
+            <p class="text-sm sm:text-base text-slate-600">
+              Select a department below to see focus areas or message Areeha directly on WhatsApp for your specific course.
+            </p>
+          </div>
+
+          <div class="w-full md:w-72">
+            <label for="department-search" class="sr-only">Filter departments</label>
+            <div class="relative">
+              <i class="fa-solid fa-magnifying-glass text-slate-400 text-xs absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+              <input
+                type="search"
+                id="department-search"
+                placeholder="Filter field or topic (e.g., Nursing)..."
+                class="w-full pl-9 pr-3.5 py-2.5 rounded-xl border border-slate-200 bg-white focus:border-blue-800 focus:outline-none text-xs sm:text-sm"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div id="departments-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+
+        <div class="bg-blue-950 text-white rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div class="space-y-1">
+            <div class="text-sm sm:text-base font-bold">Studying in a specialized or interdisciplinary department?</div>
+            <p class="text-xs sm:text-sm text-blue-100">
+              Send your module brief or syllabus outline to <span class="font-mono font-semibold">+923328572509</span> on WhatsApp.
+            </p>
+          </div>
+          <button
+            type="button"
+            data-department-inquiry="Specialized / Interdisciplinary Field"
+            class="dept-whatsapp-btn shrink-0 px-5 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-slate-950 text-xs sm:text-sm font-bold inline-flex items-center gap-2 transition cursor-pointer"
+          >
+            <i class="fa-brands fa-whatsapp text-base"></i>
+            <span>Ask About My Field</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compact Portfolio Samples Section -->
+    <section id="samples" class="py-14 sm:py-20 bg-white border-b border-slate-200/70">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+          <div class="max-w-2xl space-y-2">
+            <div class="text-xs font-bold uppercase tracking-wider text-blue-900">Sample Portfolio</div>
+            <h2 class="font-serif text-2xl sm:text-4xl font-semibold text-slate-950">
+              Examples of Structured Academic Work &amp; Research Guides
+            </h2>
+            <p class="text-sm sm:text-base text-slate-600">
+              Browse sample outlines and study frameworks across UK and US formats—all crafted with human analysis, clean referencing, and zero plagiarism.
+            </p>
+          </div>
+
+          <div class="flex flex-wrap gap-2" id="sample-filter-bar" role="group" aria-label="Filter sample work">
+            <button
+              type="button"
+              data-sample-filter="All"
+              class="sample-filter-btn px-3.5 py-2 rounded-xl text-xs font-semibold bg-blue-950 text-white transition cursor-pointer"
+            >
+              All Samples
+            </button>
+            <button
+              type="button"
+              data-sample-filter="Dissertation"
+              class="sample-filter-btn px-3.5 py-2 rounded-xl text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition cursor-pointer"
+            >
+              Dissertations
+            </button>
+            <button
+              type="button"
+              data-sample-filter="Case & Policy"
+              class="sample-filter-btn px-3.5 py-2 rounded-xl text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition cursor-pointer"
+            >
+              Case &amp; Policy
+            </button>
+            <button
+              type="button"
+              data-sample-filter="Literature & Review"
+              class="sample-filter-btn px-3.5 py-2 rounded-xl text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition cursor-pointer"
+            >
+              Reviews
+            </button>
+          </div>
+        </div>
+
+        <div id="samples-grid" class="grid grid-cols-1 md:grid-cols-3 gap-5"></div>
+      </div>
+    </section>
+
+    <!-- Process & Student Assurance -->
+    <section id="process" class="py-14 sm:py-20 bg-white border-b border-slate-200/70">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+        <div class="max-w-2xl space-y-2.5">
+          <div class="text-xs font-bold uppercase tracking-wider text-blue-900">How We Work</div>
+          <h2 class="font-serif text-2xl sm:text-4xl font-semibold text-slate-950">
+            Simple, Transparent Process From First Message to Final Draft
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="rounded-2xl border border-slate-200 p-6 space-y-3 bg-slate-50/40">
+            <div class="text-xs font-bold text-blue-900">STEP 01</div>
+            <h3 class="text-base font-bold text-slate-950">Share Rubric &amp; Timeline</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Send your topic, word count, referencing style, and deadline on WhatsApp so scope and expectations are clear upfront.
+            </p>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200 p-6 space-y-3 bg-slate-50/40">
+            <div class="text-xs font-bold text-blue-900">STEP 02</div>
+            <h3 class="text-base font-bold text-slate-950">Outline &amp; Research Alignment</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Review the structure, argument flow, and academic sources together so the work stays focused on your learning goals.
+            </p>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200 p-6 space-y-3 bg-slate-50/40">
+            <div class="text-xs font-bold text-blue-900">STEP 03</div>
+            <h3 class="text-base font-bold text-slate-950">Draft Review &amp; Revisions</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Receive organized drafts with clean citations and request targeted refinements before your submission window closes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Legitimacy & Student FAQ -->
+    <section id="faq" class="py-14 sm:py-20 bg-slate-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        <div class="space-y-2">
+          <div class="text-xs font-bold uppercase tracking-wider text-blue-900">Student FAQ</div>
+          <h2 class="font-serif text-2xl sm:text-4xl font-semibold text-slate-950">
+            Common Questions From UK, US &amp; Global Students
+          </h2>
+        </div>
+
+        <div class="space-y-3" id="faq-accordion">
+          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
+            <button
+              type="button"
+              class="faq-trigger w-full px-5 py-4 text-left flex items-center justify-between gap-4 text-sm font-bold text-slate-950 hover:bg-slate-50 transition cursor-pointer"
+              aria-expanded="true"
+            >
+              <span>How is this service intended to be used legitimately by students?</span>
+              <i class="fa-solid fa-chevron-down text-xs text-slate-500 transition-transform"></i>
+            </button>
+            <div class="faq-panel px-5 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Every outline, research summary, and draft is provided as an educational reference, tutoring guide, or editing aid to help you understand structure, arguments, and citations. Students should always follow their own university’s academic integrity policies when submitting coursework.
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
+            <button
+              type="button"
+              class="faq-trigger w-full px-5 py-4 text-left flex items-center justify-between gap-4 text-sm font-bold text-slate-950 hover:bg-slate-50 transition cursor-pointer"
+              aria-expanded="false"
+            >
+              <span>How do you ensure AI-free, original writing without plagiarism?</span>
+              <i class="fa-solid fa-chevron-down text-xs text-slate-500 transition-transform -rotate-90"></i>
+            </button>
+            <div class="faq-panel hidden px-5 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Every outline and draft is researched and written manually from academic literature and your rubric guidelines, with proper in-text citations and reference lists so ideas are clearly attributed and free of copied or unverified filler.
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden">
+            <button
+              type="button"
+              class="faq-trigger w-full px-5 py-4 text-left flex items-center justify-between gap-4 text-sm font-bold text-slate-950 hover:bg-slate-50 transition cursor-pointer"
+              aria-expanded="false"
+            >
+              <span>How quickly can I get a response on WhatsApp?</span>
+              <i class="fa-solid fa-chevron-down text-xs text-slate-500 transition-transform -rotate-90"></i>
+            </button>
+            <div class="faq-panel hidden px-5 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Message <strong class="font-mono text-slate-900">+923328572509</strong> on WhatsApp anytime with your deadline, word count, and department. I review inquiries promptly and coordinate across UK (GMT/BST) and US (EST/PST) study schedules.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-300 py-10 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+      <div class="space-y-1">
+        <div class="font-serif text-lg font-semibold text-white">Areeha Tufail</div>
+        <p class="text-xs text-slate-400">
+          Academic Research, Dissertations &amp; Study Support • WhatsApp: <span class="font-mono text-slate-200">+923328572509</span>
+        </p>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-3">
+        <a
+          href="https://wa.me/923328572509"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold transition"
+        >
+          <i class="fa-brands fa-whatsapp text-sm"></i>
+          <span>WhatsApp +923328572509</span>
+        </a>
+        <a
+          href="#top"
+          class="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-xs font-medium text-slate-200 transition"
+        >
+          <i class="fa-solid fa-arrow-up text-[11px]"></i>
+          <span>Back to Top</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a
+    href="https://wa.me/923328572509?text=Hello%20Areeha%2C%20I%20found%20your%20portfolio%20and%20would%20like%20academic%20support."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with Areeha Tufail on WhatsApp"
+    class="fixed bottom-5 right-4 sm:right-6 z-40 w-14 h-14 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white shadow-xl shadow-emerald-950/25 flex items-center justify-center text-2xl transition hover:scale-105"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script>
+    (function () {
+      "use strict";
+
+      const WHATSAPP_NUMBER = "923328572509";
+
+      const DEPARTMENTS = [
+        {
+          name: "Business & Finance",
+          icon: "fa-briefcase",
+          topics: "Management, Marketing, Accounting, Corporate Strategy"
+        },
+        {
+          name: "Computer Science & Data",
+          icon: "fa-laptop-code",
+          topics: "Software Engineering, AI/ML Concepts, Databases, Systems"
+        },
+        {
+          name: "Nursing & Health Sciences",
+          icon: "fa-heart-pulse",
+          topics: "Evidence-Based Practice, Public Health, Care Frameworks"
+        },
+        {
+          name: "Psychology & Social Sciences",
+          icon: "fa-brain",
+          topics: "Cognitive & Clinical Themes, Sociology, Research Methods"
+        },
+        {
+          name: "Law & Public Policy",
+          icon: "fa-scale-balanced",
+          topics: "Case Analysis, Regulatory Frameworks, Policy Briefs"
+        },
+        {
+          name: "Engineering & Applied Sciences",
+          icon: "fa-gears",
+          topics: "Technical Reports, Project Scoping, Applied Problem Sets"
+        },
+        {
+          name: "Literature, History & Humanities",
+          icon: "fa-feather-pointed",
+          topics: "Critical Analysis, Historiography, Cultural Studies"
+        },
+        {
+          name: "Education & Economics",
+          icon: "fa-chalkboard-user",
+          topics: "Curriculum Studies, Pedagogy, Micro & Macro Analysis"
+        }
+      ];
+
+      const PORTFOLIO_SAMPLES = [
+        {
+          category: "Dissertation",
+          badge: "UK MSc • Harvard",
+          title: "Sustainable Supply Chain Governance & Scope 3 Reporting",
+          summary: "Chapter framework covering research gap identification, thematic literature synthesis, and qualitative interview design.",
+          tag: "AI-Free • 0% Plagiarism Focus"
+        },
+        {
+          category: "Case & Policy",
+          badge: "US MBA • APA 7th",
+          title: "Digital Health Adoption & Clinical Workflow Evaluation",
+          summary: "Structured policy and operational analysis evaluating implementation barriers, stakeholder alignment, and outcome metrics.",
+          tag: "Rubric-Aligned • Cited Sources"
+        },
+        {
+          category: "Literature & Review",
+          badge: "BSc / BA • OSCOLA & APA",
+          title: "Comparative Systematic Review on Algorithmic Accountability",
+          summary: "Critical comparison of peer-reviewed frameworks, ethical trade-offs, and structured synthesis tables for study revision.",
+          tag: "Human-Edited • Clean Citations"
+        }
+      ];
+
+      function buildWhatsAppUrl(text) {
+        return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+      }
+
+      function showToast(msg) {
+        const banner = document.getElementById("toast-banner");
+        const label = document.getElementById("toast-message");
+        if (!banner || !label) return;
+        label.textContent = msg;
+        banner.classList.remove("hidden");
+        clearTimeout(window.__toastTimer);
+        window.__toastTimer = setTimeout(() => {
+          banner.classList.add("hidden");
+        }, 2600);
+      }
+
+      function copyToClipboard(text, successMsg) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(
+            () => showToast(successMsg),
+            () => fallbackCopy(text, successMsg)
+          );
+        } else {
+          fallbackCopy(text, successMsg);
+        }
+      }
+
+      function fallbackCopy(text, successMsg) {
+        const ta = document.createElement("textarea");
+        ta.value = text;
+        ta.setAttribute("readonly", "");
+        ta.style.position = "fixed";
+        ta.style.opacity = "0";
+        document.body.appendChild(ta);
+        ta.select();
+        try {
+          document.execCommand("copy");
+          showToast(successMsg);
+        } catch (err) {
+          showToast("Could not copy automatically.");
+        } finally {
+          ta.remove();
+        }
+      }
+
+      function renderDepartments(filterText = "") {
+        const grid = document.getElementById("departments-grid");
+        if (!grid) return;
+
+        const q = filterText.trim().toLowerCase();
+        const matches = DEPARTMENTS.filter(
+          (d) =>
+            !q ||
+            d.name.toLowerCase().includes(q) ||
+            d.topics.toLowerCase().includes(q)
+        );
+
+        if (matches.length === 0) {
+          grid.innerHTML = `
+            <div class="col-span-full rounded-2xl border border-slate-200 bg-white p-6 text-center text-sm text-slate-600">
+              No preset department matched "<strong>${escapeHtml(q)}</strong>". Click <strong>Ask About My Field</strong> below to message Areeha directly.
+            </div>
+          `;
+          return;
+        }
+
+        grid.innerHTML = matches
+          .map(
+            (dept) => `
+            <div class="rounded-2xl border border-slate-200 bg-white hover:border-blue-900/30 hover:shadow-sm transition p-5 flex flex-col justify-between gap-4">
+              <div class="space-y-2">
+                <div class="w-9 h-9 rounded-lg bg-blue-50 text-blue-900 flex items-center justify-center text-sm">
+                  <i class="fa-solid ${dept.icon}"></i>
+                </div>
+                <h3 class="text-sm font-bold text-slate-950">${escapeHtml(dept.name)}</h3>
+                <p class="text-xs text-slate-600 leading-relaxed">${escapeHtml(dept.topics)}</p>
+              </div>
+              <button
+                type="button"
+                data-department-inquiry="${escapeHtml(dept.name)}"
+                class="dept-whatsapp-btn text-left text-xs font-semibold text-emerald-700 hover:text-emerald-800 inline-flex items-center gap-1.5 cursor-pointer"
+              >
+                <i class="fa-brands fa-whatsapp text-sm"></i>
+                <span>Inquire for ${escapeHtml(dept.name.split(" ")[0])}</span>
+              </button>
+            </div>
+          `
+          )
+          .join("");
+      }
+
+      function renderSamples(activeCategory = "All") {
+        const grid = document.getElementById("samples-grid");
+        if (!grid) return;
+
+        const items =
+          activeCategory === "All"
+            ? PORTFOLIO_SAMPLES
+            : PORTFOLIO_SAMPLES.filter((item) => item.category === activeCategory);
+
+        grid.innerHTML = items
+          .map(
+            (item) => `
+            <article class="rounded-2xl border border-slate-200 bg-slate-50/60 hover:bg-white hover:shadow-md transition p-6 flex flex-col justify-between gap-5">
+              <div class="space-y-3">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="px-2.5 py-1 rounded-lg bg-blue-950 text-white text-[11px] font-semibold">
+                    ${escapeHtml(item.badge)}
+                  </span>
+                  <span class="text-[11px] font-semibold text-emerald-700">
+                    ${escapeHtml(item.tag)}
+                  </span>
+                </div>
+                <h3 class="text-base font-bold text-slate-950 leading-snug">
+                  ${escapeHtml(item.title)}
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  ${escapeHtml(item.summary)}
+                </p>
+              </div>
+
+              <button
+                type="button"
+                data-sample-topic="${escapeHtml(item.title)}"
+                class="sample-whatsapp-btn text-left text-xs font-semibold text-blue-900 hover:text-emerald-700 inline-flex items-center gap-1.5 cursor-pointer"
+              >
+                <i class="fa-brands fa-whatsapp text-sm text-emerald-600"></i>
+                <span>Discuss a similar brief</span>
+              </button>
+            </article>
+          `
+          )
+          .join("");
+      }
+
+      function escapeHtml(str) {
+        return String(str)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+      }
+
+      function getFormattedBriefText() {
+        const name = (document.getElementById("brief-name")?.value || "").trim() || "Student";
+        const region = document.getElementById("brief-region")?.value || "UK / US University";
+        const department = document.getElementById("brief-department")?.value || "General Academic";
+        const supportType = document.getElementById("brief-type")?.value || "Academic Support";
+        const deadline = (document.getElementById("brief-deadline")?.value || "").trim() || "Flexible";
+        const notes = (document.getElementById("brief-notes")?.value || "").trim() || "Sharing details in chat.";
+
+        return [
+          `Hello Areeha, I am ${name} (${region}).`,
+          `Department: ${department}`,
+          `Support Needed: ${supportType}`,
+          `Target Deadline: ${deadline}`,
+          `Notes: ${notes}`
+        ].join("\n");
+      }
+
+      function init() {
+        renderDepartments();
+        renderSamples();
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById("mobile-menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        menuBtn?.addEventListener("click", () => {
+          const isHidden = mobileMenu?.classList.toggle("hidden");
+          menuBtn.setAttribute("aria-expanded", String(!isHidden));
+        });
+
+        document.querySelectorAll(".mobile-nav-link").forEach((link) => {
+          link.addEventListener("click", () => {
+            mobileMenu?.classList.add("hidden");
+            menuBtn?.setAttribute("aria-expanded", "false");
+          });
+        });
+
+        // Hero WhatsApp CTA
+        document.getElementById("hero-whatsapp-cta")?.addEventListener("click", () => {
+          const url = buildWhatsAppUrl(
+            "Hello Areeha, I visited your portfolio and would like academic research and study guidance."
+          );
+          window.open(url, "_blank", "noopener,noreferrer");
+        });
+
+        // Quick Brief form submit -> WhatsApp
+        document.getElementById("quick-brief-form")?.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const text = getFormattedBriefText();
+          window.open(buildWhatsAppUrl(text), "_blank", "noopener,noreferrer");
+        });
+
+        // Copy formatted brief
+        document.getElementById("copy-brief-btn")?.addEventListener("click", () => {
+          copyToClipboard(getFormattedBriefText(), "Study brief copied to clipboard.");
+        });
+
+        // Copy WhatsApp number
+        document.getElementById("copy-number-btn")?.addEventListener("click", () => {
+          copyToClipboard("+923328572509", "Copied +923328572509 to clipboard.");
+        });
+
+        // Portfolio sample category filter
+        document.querySelectorAll(".sample-filter-btn").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const selected = btn.getAttribute("data-sample-filter") || "All";
+            renderSamples(selected);
+            document.querySelectorAll(".sample-filter-btn").forEach((b) => {
+              const isSelected = b.getAttribute("data-sample-filter") === selected;
+              b.className = isSelected
+                ? "sample-filter-btn px-3.5 py-2 rounded-xl text-xs font-semibold bg-blue-950 text-white transition cursor-pointer"
+                : "sample-filter-btn px-3.5 py-2 rounded-xl text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition cursor-pointer";
+            });
+          });
+        });
+
+        // Service card quick triggers
+        document.querySelectorAll(".service-cta-btn").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const service = btn.getAttribute("data-service-inquiry") || "Academic Support";
+            const typeSelect = document.getElementById("brief-type");
+            if (typeSelect) {
+              const hasOption = [...typeSelect.options].some((o) => o.value === service);
+              if (hasOption) typeSelect.value = service;
+            }
+            const url = buildWhatsAppUrl(
+              `Hello Areeha, I would like help with ${service}.`
+            );
+            window.open(url, "_blank", "noopener,noreferrer");
+          });
+        });
+
+        // Department search & WhatsApp buttons
+        document.getElementById("department-search")?.addEventListener("input", (e) => {
+          renderDepartments(e.target.value);
+        });
+
+        document.addEventListener("click", (e) => {
+          const deptBtn = e.target.closest(".dept-whatsapp-btn");
+          if (deptBtn) {
+            const deptName = deptBtn.getAttribute("data-department-inquiry") || "my department";
+            const url = buildWhatsAppUrl(
+              `Hello Areeha, I need academic research and study guidance for ${deptName}.`
+            );
+            window.open(url, "_blank", "noopener,noreferrer");
+            return;
+          }
+
+          const sampleBtn = e.target.closest(".sample-whatsapp-btn");
+          if (sampleBtn) {
+            const sampleTitle = sampleBtn.getAttribute("data-sample-topic") || "academic research";
+            const url = buildWhatsAppUrl(
+              `Hello Areeha, I saw your sample work on "${sampleTitle}" and would like to discuss my brief.`
+            );
+            window.open(url, "_blank", "noopener,noreferrer");
+          }
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll(".faq-trigger").forEach((trigger) => {
+          trigger.addEventListener("click", () => {
+            const panel = trigger.nextElementSibling;
+            const icon = trigger.querySelector("i");
+            if (!panel) return;
+            const willOpen = panel.classList.contains("hidden");
+            panel.classList.toggle("hidden", !willOpen);
+            trigger.setAttribute("aria-expanded", String(willOpen));
+            if (icon) {
+              icon.classList.toggle("-rotate-90", !willOpen);
+            }
+          });
+        });
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", init);
+      } else {
+        init();
+      }
+    })();
+  </script>
+</body>
+</html>
